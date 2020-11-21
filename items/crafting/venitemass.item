@@ -1,0 +1,10 @@
+{
+  "itemName" : "venitemass",
+  "price" : 140,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "venitemass.png",
+  "description" : "A living glob of venite which moves around horrifyingly...",
+  "shortdescription" : "Venite Mass",
+  "itemTags" : [ "reagent" ]
+}

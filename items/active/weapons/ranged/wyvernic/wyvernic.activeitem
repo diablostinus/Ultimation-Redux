@@ -1,0 +1,68 @@
+{
+  "itemName" : "wyvernic",
+  "price" : 12500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "The perfect ^cyan;Artifact^reset; is ready to serve.",
+  "shortdescription" : "^cyan;Wyvernic^reset;",
+  "tooltipKind" : "base",
+  "category" : "uniqueWeapon",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged"],
+  "level" : 40,
+
+  "inventoryIcon" : "wyvernicicon.png",
+
+  "animation" : "wyvernic.animation",
+  "animationParts" : {
+    "gun" : "wyvernic.png",
+    "gunfullbright" : "wyvernicfullbright.png"
+  },
+  "animationCustom" : {},
+  "muzzleOffset" : [2.5, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "ice",
+
+  "primaryAbilityType" : "chargefire",
+  "primaryAbility" : {
+    "chargeLevels" : [
+      {
+        "time" : 0,
+        "energyCost" : 5,
+        "cooldown" : 0.1,
+        "projectileType" : "spireshard",
+        "projectileParameters" : {},
+        "projectileCount" : 3,
+        "inaccuracy" : 0.25,
+        "baseDamage" : 5.0,
+        "fireSound" : "fire"
+      },
+      {
+        "time" : 0.8,
+        "energyCost" : 5,
+        "cooldown" : 0.1,
+        "projectileType" : "spireshardorb",
+        "projectileParameters" : {},
+        "projectileCount" : 2,
+        "inaccuracy" : 0.010,
+        "baseDamage" : 1.5,
+        "fireSound" : "fire"
+      },
+      {
+        "time" : 1,
+        "energyCost" : 55,
+        "cooldown" : 0.5,
+        "projectileType" : "spiretorpedox",
+        "projectileParameters" : {},
+        "projectileCount" : 4,
+        "inaccuracy" : 0.010,
+        "baseDamage" : 65.85,
+        "fireSound" : "fire2"
+      }
+    ]
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "ceruliumsapphire",
+  "price" : 140,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ceruliumsapphire.png",
+  "description" : "The aura of these materials are as cold as they get, Great for making ice based weapons.",
+  "shortdescription" : "Cerulium Sapphire",
+  "itemTags" : [ "reagent" ]
+}

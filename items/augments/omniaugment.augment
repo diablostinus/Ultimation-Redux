@@ -1,0 +1,22 @@
+{
+  "itemName" : "omniaugment",
+  "price" : 75000,
+  "rarity" : "Legendary",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "omniaugment.png",
+  "description" : "Take your revenge onto them with this.",
+  "shortdescription" : "OmniAugment",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "omniaugment",
+    "displayName" : "OmniAugment",
+    "displayIcon" : "/items/augments/omniaugment.png",
+    "effects" : [ "regenerationaugment3",  "runboostaugment", "swimboost",  "jumpboostaugment", "rageaugment3", "lowgravaugment"  ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

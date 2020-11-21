@@ -1,0 +1,10 @@
+{
+  "itemName" : "rubiumruby",
+  "price" : 140,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "rubiumruby.png",
+  "description" : "Mainly used as a core for many weapons that require it.",
+  "shortdescription" : "Rubium Ruby",
+  "itemTags" : [ "reagent" ]
+}

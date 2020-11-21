@@ -1,0 +1,16 @@
+[
+  {
+    "op": "add",
+    "path": "/darkness",
+    "value": {
+      "resistanceStat": "darknessResistance",
+      "damageNumberParticles": {
+        "hit": "darknessdamagenumber",
+        "stronghit": "darknessdamagenumberstrong",
+        "weakhit": "darknessdamagenumberweak",
+        "shieldhit": "darknessdamagenumber",
+        "kill": "darknessdamagenumber"
+      }
+    }
+  }
+]

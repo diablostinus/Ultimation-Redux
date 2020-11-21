@@ -1,0 +1,10 @@
+{
+  "itemName" : "venitebar",
+  "price" : 140,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "venitebar.png",
+  "description" : "A bar of Venite Agate, excellently crafted and durable.",
+  "shortdescription" : "Venite Bar",
+  "itemTags" : [ "reagent" ]
+}

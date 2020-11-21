@@ -1,0 +1,10 @@
+{
+  "itemName" : "veniteagate",
+  "price" : 140,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "veniteagate.png",
+  "description" : "The crystal feels very acidic to the touch, atleast touching the rocky parts is better to touch.",
+  "shortdescription" : "Venite Agate",
+  "itemTags" : [ "reagent" ]
+}

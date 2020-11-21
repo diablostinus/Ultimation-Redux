@@ -1,0 +1,10 @@
+{
+  "itemName" : "venitescale",
+  "price" : 140,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "venitescale.png",
+  "description" : "Searing acid from this simple scale shall be useful.",
+  "shortdescription" : "Venite Scale",
+  "itemTags" : [ "reagent" ]
+}

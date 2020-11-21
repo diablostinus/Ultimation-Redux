@@ -1,0 +1,10 @@
+{
+  "itemName" : "rubiumagate",
+  "price" : 140,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "rubiumagate.png",
+  "description" : "The crystals on it feel so warm that perhaps it can be used to create materials.",
+  "shortdescription" : "Rubium Agate",
+  "itemTags" : [ "reagent" ]
+}

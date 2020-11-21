@@ -1,0 +1,98 @@
+{
+  "itemName" : "darksoul",
+  "price" : 10000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "I am the Darkness thats approaching your every limit.",
+  "shortdescription" : "Dark Soul",
+  // "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","shotgun"],
+  "level" : 10000,
+
+  "inventoryIcon" : [
+    { "image" : "darksoul.png" }
+  ],
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "darksoul.png",
+    "barrel" : "",
+    "muzzleFlash" : "darksoulflash.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/cobiner_fire.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 0, 0]
+      }
+    }
+  },
+
+  "baseOffset" : [0.125, 0.625],
+  "muzzleOffset" : [1.75, 0],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "darkness",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.125,
+    "baseDps" : 12,
+    "energyUsage" : 25,
+    "projectileCount" : 5,
+    "inaccuracy" : 0.0685,
+    "fireType" : "auto",
+
+    "projectileType" : "darkshard",
+    "projectileParameters" : {
+      "knockback" : 12
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbilityType" : "grenadelauncher",
+  "altAbility" : {
+    "elementalConfig" : {
+      "darkness" : { "projectileType" : "darkshardex" }
+    },
+    "energyUsage" : 160
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

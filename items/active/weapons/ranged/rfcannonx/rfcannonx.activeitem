@@ -1,0 +1,176 @@
+{
+  "itemName" : "rfcannonx",
+  "level" : 55,
+  "price" : 80080,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Such a weapon that exists to purge the beings that desire pain, this will be your chance to have retribution my friend.",
+  "shortdescription" : "Retribution Force Cannon X",
+  "tooltipKind" : "base",
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged"],
+
+  "inventoryIcon" : "rfcannonx.png:idle.1",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "rfcannon.png",
+    "barrel" : "",
+    "muzzleFlash" : "rfcannonxmuzzle.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 3,
+          "cycle" : 0.3,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [1.5, 0],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+        "partStates" : {
+          "middle" : {
+            "idle" : {
+              "properties" : {
+                "image" : "rfcannonxfullbright.png:idle.<frame><paletteSwaps>"
+              }
+            }
+          }
+        }
+      },
+	  "middle" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [1.5, 0],
+          "zLevel" : 0,
+		  "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "middle" : {
+            "idle" : {
+              "properties" : {
+                "image" : "rfcannonx.png<paletteSwaps>"
+              }
+            }
+          }
+        }
+      }
+	  }
+    },
+    "sounds" : {
+      "fire" : ["/sfx/gun/rfcannonx_fire.ogg"],
+      "altFire" : [ "/sfx/gun/rfcannonx_fire.ogg" ]
+    }
+  },
+  "baseOffset" : [1.5, 0],
+  "muzzleOffset" : [2.875, 0],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.38,
+    "baseDps" : 55.5,
+    "energyUsage" : 55,
+    "projectileCount" : 2,
+    "inaccuracy" : 0.0010,
+
+    "burstCount" : 4,
+    "burstTime" : 0.1,
+    "fireType" : "burst",
+
+    "projectileType" : "spiretorpedox",
+    "projectileParameters" : {},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Sticky Plasma Mines",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+    "class" : "AltFireAttack",
+
+    "fireTime" : 1.45,
+    "energyUsage" : 160,
+    "projectileCount" : 8,
+    "inaccuracy" : 0.125,
+    "fireType" : "auto",
+
+    "useParticleEmitter" : false,
+
+    "projectileType" : "spiremissleshard",
+    "projectileParameters" : {},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

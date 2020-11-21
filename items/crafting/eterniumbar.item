@@ -1,0 +1,10 @@
+{
+  "itemName" : "eterniumbar",
+  "price" : 2000,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "eterniumbar.png",
+  "description" : "A extremely durable bar of eternium, It can be used in many ways.",
+  "shortdescription" : "Eternium Bar",
+  "itemTags" : [ "reagent" ]
+}

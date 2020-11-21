@@ -1,0 +1,10 @@
+{
+  "itemName" : "ceruliumiron",
+  "price" : 140,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ceruliumiron.png",
+  "description" : "These can be used in many ways like creating melee weapons that are ice based.",
+  "shortdescription" : "Cerulium Iron",
+  "itemTags" : [ "reagent" ]
+}

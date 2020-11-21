@@ -1,0 +1,10 @@
+{
+  "itemName" : "ceruliumagate",
+  "price" : 140,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ceruliumagate.png",
+  "description" : "Freezing to the touch, It feels as if your soul is shivering aswell.",
+  "shortdescription" : "Cerulium Agate",
+  "itemTags" : [ "reagent" ]
+}

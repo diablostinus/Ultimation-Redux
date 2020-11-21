@@ -1,0 +1,10 @@
+{
+  "itemName" : "rubiumsteel",
+  "price" : 140,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "rubiumsteel.png",
+  "description" : "The rubium has formed into a very sharp steel that allows heat to be attracted to it easier.",
+  "shortdescription" : "Rubium Steel",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "frostiumbar",
+  "price" : 2000,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "frostiumbar.png",
+  "description" : "Eternium Bar infused with Ice, used to create the Artifact.",
+  "shortdescription" : "Frostium Bar",
+  "itemTags" : [ "reagent" ]
+}

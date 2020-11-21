@@ -1,0 +1,10 @@
+{
+  "itemName" : "veniteemerald",
+  "price" : 140,
+  "rarity" : "legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "veniteemerald.png",
+  "description" : "Sharp and Shiny, They are perfect to imbue weapons with a acidic charge.",
+  "shortdescription" : "Venite Emerald",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,86 @@
+{
+  "itemName" : "darkdread",
+  "price" : 26500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Darkness comes, light shown on none as you shall do what you please.",
+  "shortdescription" : "Dark Dread",
+  "tooltipKind" : "base",
+  "category" : "uniqueWeapon",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged"],
+  "level" : 20,
+
+  "inventoryIcon" : "darkdreadicon.png",
+
+  "animation" : "darkdread.animation",
+  "animationParts" : {
+    "gun" : "darkdread.png",
+    "gunfullbright" : "darkdreadfullbright.png"
+  },
+  "animationCustom" : {},
+  "muzzleOffset" : [1.875, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "handGrip" : "wrap",
+
+  "elementalType" : "darkness",
+
+  "primaryAbility" : {
+    "name" : "Rocket Stack",
+    "scripts" : ["/items/active/weapons/ranged/darkdread/rocketstack.lua"],
+    "class" : "RocketStack",
+
+    "baseDamage" : 2,
+    "energyPerShot" : 6,
+
+    "reloadTime" : 0.025,
+    "maxStack" : 8,
+    "spread" : 0.01,
+
+    "inaccuracy" : 0,
+
+    "projectileType" : "darknessblast",
+    "projectileParameters" : {},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.025,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
