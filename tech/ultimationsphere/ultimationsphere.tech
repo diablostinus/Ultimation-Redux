@@ -1,0 +1,83 @@
+{
+  "name" : "ultimationsphere",
+  "type" : "head",
+
+  "scripts" : ["ultimationsphere.lua"],
+  "animator" : "ultimationsphere.animation",
+
+  "description" : "^cyan;Turn into the legendary Ultimation Sphere!^reset;",
+  "shortDescription" : "^cyan;Ultimation Sphere^reset;",
+  "rarity" : "Legendary",
+  "icon" : "/tech/ultimationsphere.png",
+
+  "chipCost" : 2,
+
+  "animationParts" : {
+    "ballGlow" : "ultimationsphereglow.png",
+    "ball" : "ultimationsphere.png"
+  },
+
+  "transformedMovementParameters" : {
+    "collisionPoly" : [ [-0.85, -0.45], [-0.45, -0.85], [0.45, -0.85], [0.85, -0.45], [0.85, 0.45], [0.45, 0.85], [-0.45, 0.85], [-0.85, 0.45] ],
+
+    "groundForce" : 450.0,
+    "normalGroundFriction" : 1.8,
+    "ambulatingGroundFriction" : 0.2,
+    "slopeSlidingFactor" : 5.0,
+    "liquidBuoyancy" : 5.0,
+
+    "airJumpProfile" : {
+      "jumpSpeed" : 50,
+      "jumpControlForce" : 800.0,
+      "jumpInitialPercentage" : 1.0,
+      "jumpHoldTime" : 1.25
+    },
+
+    "liquidJumpProfile" : {
+      "jumpSpeed" : 100,
+      "jumpControlForce" : 800.0,
+
+      "multiJump" : true,
+      "autoJump" : true
+    }
+  },
+  "transformedMovementParameters2" : {
+    "collisionPoly" : [ [-0.85, -0.35], [-0.35, -0.85], [0.35, -0.85], [0.85, -0.35], [0.85, 0.35], [0.35, 0.85], [-0.35, 0.85], [-0.85, 0.35] ],
+
+    "airForce" : 0.0,
+    "liquidForce" : 0.0,
+
+    "airJumpProfile" : {
+      "jumpSpeed" : 0.0
+    },
+
+    "liquidJumpProfile" : {
+      "jumpSpeed" : 50.0,
+      "jumpControlForce" : 800.0,
+
+      "multiJump" : true,
+      "autoJump" : true
+    }
+  },
+
+  "ballSpeed" : 50,
+  "ballSpikeSpeed" : 10,
+
+  "energyCost" : 25,
+
+  "ballRadius" : 1,
+  "ballFrames" : 4,
+
+  "damageDisableTime" : 0.2,
+
+  "ignorePlatforms" : false,
+  "blinkOutTime" : 0.10,
+  "blinkInTime" : 0.10,
+  "dashCooldown" : 0.10,
+  "projectileType" : "darknessblast",
+  "projectileParameters" : {"speed" : 65},
+  "altProjectileType" : "megadarknessblast",
+  "altProjectileParameters" : {"speed" : 65},
+  "fireCooldown" : 0.085,
+  "altFireCooldown" : 0.25
+}

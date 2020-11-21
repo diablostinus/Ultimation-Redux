@@ -1,0 +1,15 @@
+{
+  "name" : "darkplague",
+  "blockingStat" : "",
+
+  "effectConfig" : {},
+  "defaultDuration" : 5.0,
+
+  "scripts" : [
+    "darkplague.lua"
+  ],
+
+  "animationConfig" : "darkplague.animation",
+  "label" : "You have been cursed with the Dark Plague",
+  "icon" : "/interface/statuses/darkplague.png"
+}

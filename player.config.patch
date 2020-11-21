@@ -1,0 +1,10 @@
+[
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"wyvernic"}},
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"darkspear"}},
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"eterniumbar"}},
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"frostiumbar"}},
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"vaultkey"}},
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"cobiner"}},
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"blitzer"}},
+{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"darkdread"}}
+]
