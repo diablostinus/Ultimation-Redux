@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "darkling",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

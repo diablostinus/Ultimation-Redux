@@ -1,0 +1,9 @@
+{
+  "name" : "crystok",
+  "category" : "crystok",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "crystok.png"
+  }
+}

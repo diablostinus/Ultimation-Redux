@@ -1,0 +1,9 @@
+{
+  "name" : "frostlin",
+  "category" : "frostlin",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "frostlin.png"
+  }
+}

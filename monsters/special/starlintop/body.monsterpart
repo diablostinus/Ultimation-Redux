@@ -1,0 +1,9 @@
+{
+  "name" : "starlintop",
+  "category" : "starlintop",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "starlintop.png"
+  }
+}

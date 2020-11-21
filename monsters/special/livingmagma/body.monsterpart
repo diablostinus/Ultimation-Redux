@@ -1,0 +1,9 @@
+{
+  "name" : "livingmagma",
+  "category" : "livingmagma",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "livingmagma.png"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "articfin",
+  "category" : "articfin",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "articfin.png"
+  }
+}
