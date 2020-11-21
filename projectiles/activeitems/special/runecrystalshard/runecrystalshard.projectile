@@ -1,0 +1,15 @@
+{
+  "projectileName" : "runecrystalshard",
+  "physics" : "grenade",
+  "bounces" : 10,
+  "timeToLive" : 2.2,
+  "damageKindImage" : "runecrystalshardicon.png",
+  "image" : "runecrystalshard.png",
+  "animationLoops" : false,
+  "animationCycle" : 0.6,
+  "frameNumber" : 5,
+  "emitters" : [ "iceplasmarocket" ],
+  "speed" : 30,
+  "power" : 0.1,
+  "damageKind" : "ice"
+}
