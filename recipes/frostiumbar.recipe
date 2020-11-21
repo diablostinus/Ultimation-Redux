@@ -1,0 +1,14 @@
+{
+  "input" : [
+   { "item" : "refinedferozium", "count" : 2000 },
+   { "item" : "cryonicextract", "count" : 500 },
+   { "item" : "diamond", "count" : 650 },
+   { "item" : "eterniumbar", "count" : 2000 }
+  ],
+  "output" : {
+    "item" : "frostiumbar",
+    "count" : 20
+  },
+  "duration" : 2.50,
+  "groups" : [ "craftingfurnace", "bars", "all" ]
+}

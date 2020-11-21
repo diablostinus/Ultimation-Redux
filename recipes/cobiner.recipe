@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "eterniumbar", "count" : 2000 },
+    { "item" : "blitzer", "count" : 1 },
+    { "item" : "corefragmentore", "count" : 2000 },
+    { "item" : "solariumore", "count" : 400 },
+    { "item" : "solariumstar", "count" :250 }    ],
+  "output" : { "item" : "cobiner", "count" : 1 },
+  "groups" : [ "craftingaccelerator", "weapons", "all" ]
+}

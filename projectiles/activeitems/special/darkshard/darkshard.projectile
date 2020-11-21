@@ -1,0 +1,54 @@
+{
+  "projectileName" : "darkshard",
+  "image" : "darkshard.png",
+  "animationCycle" : 0.2,
+  "lightColor" : [2, 2, 6],
+  "frameNumber" : 1,
+  "flippable" : false,
+  "fullbright" : true,
+  "damageKindImage" : "icon.png",
+  "physics" : "sticky",
+  "emitters" : [ ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/darknessblastexplosion/darknessblastexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/special/darkshard/darkshard.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "damagePoly" : [ [-8, 0], [2, 3], [8, 0], [2, -3] ],
+  "damageKind" : "darkness",
+
+  "power" : 20,
+  "speed" : 65,
+  "timeToLive" : 4.5,
+
+  "scripts" : [ "/projectiles/tracksourcestatus.lua","/projectiles/scripts/omni-trackingprojectiles.lua" ],
+  "scriptDelta" : 2,
+
+  //Wave
+  "wavePeriod" : 0.425,
+  "waveAmplitude" : 0.225,
+  "randomWavePeriod" : true,
+  
+  //Homing
+  "searchRadius" : 200,
+  "baseHomingControlForce" : 5
+}

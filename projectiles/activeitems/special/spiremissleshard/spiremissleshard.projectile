@@ -1,0 +1,53 @@
+{
+  "projectileName" : "spiremissleshard",
+  "image" : "spiremissleshard.png",
+  "animationCycle" : 0.2,
+  "lightColor" : [0, 0, 100],
+  "frameNumber" : 1,
+  "flippable" : false,
+  "fullbright" : true,
+  "damageKindImage" : "icon.png",
+  "physics" : "sticky",
+  "emitters" : [ ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/iceexplosionknockback.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.25,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/special/spiremissleshard/spiremissleshard.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.1,
+        "destructionTime" : 0.4,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "damagePoly" : [ [-8, 0], [2, 3], [8, 0], [2, -3] ],
+  "damageKind" : "ice",
+
+  "speed" : 30,
+  "timeToLive" : 2.5,
+
+  "scripts" : [ "/projectiles/tracksourcestatus.lua","/projectiles/scripts/omni-trackingprojectiles.lua" ],
+  "scriptDelta" : 2,
+
+  //Wave
+  "wavePeriod" : 0.125,
+  "waveAmplitude" : 0.585,
+  "randomWavePeriod" : true,
+  
+  //Homing
+  "searchRadius" : 875,
+  "baseHomingControlForce" : 6.5
+}

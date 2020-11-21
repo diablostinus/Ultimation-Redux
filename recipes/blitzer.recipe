@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "eterniumbar", "count" : 1000 },
+    { "item" : "volatilepowder", "count" : 100 },
+    { "item" : "solariumore", "count" : 200 },
+    { "item" : "solariumstar", "count" : 250 },
+    { "item" : "obsidian", "count" :125 }    ],
+  "output" : { "item" : "blitzer", "count" : 1 },
+  "groups" : [ "craftingaccelerator", "weapons", "all" ]
+}

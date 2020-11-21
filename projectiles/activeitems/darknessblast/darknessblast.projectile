@@ -1,0 +1,23 @@
+{
+  "projectileName" : "darknessblast",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "darknessblast.png",
+  "fullbright" : true,
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 20,
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/gun/impact_plasma.ogg" ]
+    },
+   {
+      "action" : "config",
+      "file" : "/projectiles/explosions/darknessblastexplosion/darknessblastexplosion.config"
+    }
+  ],
+  "damageKind" : "darkness",
+  "statusEffects" : ["darkplague"]
+}

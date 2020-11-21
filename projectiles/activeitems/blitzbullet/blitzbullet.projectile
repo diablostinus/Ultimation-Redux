@@ -1,0 +1,36 @@
+{
+  "projectileName" : "blitzbullet",
+  "physics" : "sticky",
+  "timeToLive" : 8.5,
+  "piercing" : true,
+  "bounces" : 20,
+  "damageKindImage" : "icon.png",
+  "image" : "blitzbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 3,
+  "power" : 50,
+  "speed" : 35,
+  "emitters" : [ ],
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ "burning" ],
+  "lightColor" : [115, 36, 38],
+  "damageKind" : "fire",
+
+  "scripts" : ["/projectiles/scripts/omni-trackingprojectiles.lua"],
+  "scriptDelta" : 1,
+
+  //Wave
+  "wavePeriod" : 0.2,
+  "waveAmplitude" : 0.375,
+  "randomWavePeriod" : true,
+  
+  //Homing
+  "searchRadius" : 35,
+  "baseHomingControlForce" : 3.5
+}

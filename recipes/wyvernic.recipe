@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "frostiumbar", "count" :20 },
+    { "item" : "refinedferozium", "count" :150 },
+    { "item" : "dragonhead", "count" :1 }    ],
+  "output" : { "item" : "wyvernic", "count" : 1 },
+  "groups" : [ "craftingmanipulator", "weapons", "all" ]
+}

@@ -1,0 +1,92 @@
+{
+  "projectileName" : "spireshardorb",
+  "image" : "spireshardorb.png",
+  "animationCycle" : 2,
+  "lightColor" : [0, 0, 100],
+  "frameNumber" : 4,
+  "flippable" : false,
+  "fullbright" : true,
+  "damageKindImage" : "icon.png",
+  "physics" : "grenade",
+  "emitters" : [ ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/iceexplosionknockback.config"
+    },
+	{
+	  "action" : "projectile",
+	  "type" : "orbitalup",
+	  "inheritDamageFactor" : 1,
+	  "config" : {
+	    "speed" : 20,
+		"timeToLive" : 8,
+	    "actionOnReap" : [
+		  {
+		    "action" : "projectile",
+			"type" : "spireshard",
+			"angleAdjust" : 0,
+			"config" : {
+			  "bounces" : 10
+			}
+		  },
+		  {
+		    "action" : "projectile",
+			"type" : "spireshard",
+			"angleAdjust" : 20,
+			"config" : {
+			  "bounces" : 10
+			}
+		  },
+		  {
+		    "action" : "projectile",
+			"type" : "spireshard",
+			"angleAdjust" : -20,
+			"config" : {
+			  "bounces" : 10
+			}
+		  },
+		  {
+		    "action" : "projectile",
+			"type" : "spireshard",
+			"angleAdjust" : 40,
+			"config" : {
+			  "bounces" : 10
+			}
+		  },
+		  {
+		    "action" : "projectile",
+			"type" : "spireshard",
+			"angleAdjust" : -40,
+			"config" : {
+			  "bounces" : 10
+			}
+		  }
+		]
+	  }
+	}
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/spireshardorb.png:2?setcolor=aaffaa",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "slash",
+
+  "speed" : 28,
+  "timeToLive" : 0.5
+}

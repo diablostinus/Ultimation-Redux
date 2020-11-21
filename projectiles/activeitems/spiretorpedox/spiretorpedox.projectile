@@ -1,0 +1,33 @@
+{
+  "projectileName" : "spiretorpedox",
+  "image" : "spiretorpedox.png",
+  "animationCycle" : 0.2,
+  "lightColor" : [0, 0, 100],
+  "frameNumber" : 2,
+  "fullbright" : true,
+  "damageKindImage" : "icon.png",
+  "physics" : "laser",  "timeToLive" : 8.5,
+  "piercing" : true,
+  "bounces" : 3,  "statusEffects" : [
+    "frostsnare"
+  ],  
+  "emitters" : [],
+  "periodicActions" : [
+    {
+      "time" : 0.05,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/gun/pulsecannon_blast1.ogg" ]
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/iceexplosionknockback.config"
+    }
+  ],
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "ice",
+
+  "speed" : 75.5
+}

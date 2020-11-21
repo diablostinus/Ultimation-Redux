@@ -1,0 +1,54 @@
+{
+  "projectileName" : "darkshardex",
+  "image" : "darkshardex.png",
+  "animationCycle" : 0.2,
+  "lightColor" : [2, 2, 6],
+  "frameNumber" : 1,
+  "flippable" : false,
+  "fullbright" : true,
+  "damageKindImage" : "icon.png",
+  "physics" : "sticky",
+  "emitters" : [ ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/darknessexplosion/darknessexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.066,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/special/darkshardex/darkshardex.png",
+        "position" : [0, 0],
+        "layer" : "back",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.2,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "damagePoly" : [ [-8, 0], [2, 3], [8, 0], [2, -3] ],
+  "damageKind" : "darkness",
+
+  "power" : 55,
+  "speed" : 65,
+  "timeToLive" : 8.5,
+
+  "scripts" : [ "/projectiles/tracksourcestatus.lua","/projectiles/scripts/omni-trackingprojectiles.lua" ],
+  "scriptDelta" : 2,
+
+  //Wave
+  "wavePeriod" : 0.125,
+  "waveAmplitude" : 0.425,
+  "randomWavePeriod" : true,
+  
+  //Homing
+  "searchRadius" : 400,
+  "baseHomingControlForce" : 10
+}

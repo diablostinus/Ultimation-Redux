@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "eterniumbar", "count" : 1000 },
+    { "item" : "violiumore", "count" : 250 },
+    { "item" : "shadowblock", "count" : 500 },
+    { "item" : "larva", "count" : 1000 },
+    { "item" : "obsidian", "count" :250 }    ],
+  "output" : { "item" : "darkspear", "count" : 1 },
+  "groups" : [ "craftingaccelerator", "weapons", "all" ]
+}

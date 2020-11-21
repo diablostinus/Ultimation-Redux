@@ -1,0 +1,23 @@
+{
+  "projectileName" : "darkspit",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "image" : "darkspit.png",
+  "fullbright" : true,
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "power" : 25,
+  "speed" : 50,
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/gun/impact_plasma.ogg" ]
+    },
+   {
+      "action" : "config",
+      "file" : "/projectiles/explosions/darknessblastexplosion/darknessblastexplosion.config"
+    }
+  ],
+  "damageKind" : "darkness",
+  "statusEffects" : ["darkplague"]
+}

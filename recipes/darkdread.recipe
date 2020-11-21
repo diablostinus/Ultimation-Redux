@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "eterniumbar", "count" : 2000 },
+    { "item" : "miniknoglauncher", "count" : 1 },
+    { "item" : "shadowblock", "count" : 1000 },
+    { "item" : "larva", "count" : 1000 },
+    { "item" : "obsidian", "count" :1000 }    ],
+  "output" : { "item" : "darkdread", "count" : 1 },
+  "groups" : [ "craftingaccelerator", "weapons", "all" ]
+}

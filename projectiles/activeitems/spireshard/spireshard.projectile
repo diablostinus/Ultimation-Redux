@@ -1,0 +1,20 @@
+{
+  "projectileName" : "spireshard",
+  "image" : "spireshard.png",
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/iceexplosionknockback.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 50.5,
+  "damageKind" : "iceplasma",
+  "emitters" : [ ],
+  "physics" : "grenade",
+  "damagePoly" : [ [-8, 0], [2, 3], [8, 0], [2, -3] ]
+}
