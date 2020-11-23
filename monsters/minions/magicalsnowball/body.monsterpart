@@ -1,0 +1,9 @@
+{
+  "name" : "magicalsnowball",
+  "category" : "magicalsnowball",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "magicalsnowball.png"
+  }
+}
